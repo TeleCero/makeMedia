@@ -1,2 +1,2 @@
 # File Structure
-playlist/\<year>.txt
+playlist/\<category>.txt
