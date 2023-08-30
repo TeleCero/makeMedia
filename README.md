@@ -1,10 +1,27 @@
-# makeTemplate
-Template for creating a Downloader for TeleCero.
+# makeMedia
+YT-DLP Downloader for TeleCero
 
-Please remove the lines before makeShow and change the following vars:
-* Show
-* Channel
-* Country
+Over 100 Links in TeleCero
 
-# makeShow
-Show (Channel, Country) Downloader for TeleCero
+## Playlist 2.0 Format
+```
+Channel Name|Channel URL
+```
+## Examples
+### Mitele
+```
+Salvame|Video 1 URL
+Salvame|Video 2 URL
+Salvame|Video 3 URL
+Otro|Video 1 URL
+Otro|Video 2 URL
+```
+### YouTube
+```
+Salvame|Video 1 URL
+Salvame|Video 2 URL
+Salvame|Video 3 URL
+Otro|Video 1 URL
+Otro|Video 2 URL
+```
+
