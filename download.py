@@ -17,6 +17,7 @@ if __name__ == "__main__":
   print("The default path is:")
   print(DEFAULT_PATH)
   path = input("Corrected Path Without Trailing Slash\n> ")
+  DEFAULT_PATH = path
   modes = input("What modes do you want to download?\nSeparate with comma\n> ").split(":", 1)
   for mode in modes:
-    dmode(mode)
+    dmode(mode, path)
