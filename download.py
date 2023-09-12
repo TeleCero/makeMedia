@@ -2,7 +2,7 @@ import os
 import requests
 from time import sleep
 DEFAULT_ARGS = "-f 'best[height<=480][ext=mp4]/bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]/best[height<=480]'"
-DEFAULT_PATH = "/srv/mergerfs/R01/Datos/TeleCero/Videos"
+DEFAULT_PATH = input("Corrected Path Without Trailing Slash\n> ")
 def dfile(file: str, args: str = DEFAULT_ARGS, out: str = DEFAULT_PATH):
   with open(file, "r") as f:
     for line in f.read().splitlines():
@@ -14,10 +14,6 @@ def dmode(mode, out: str = DEFAULT_PATH):
   dfile(f"./playlist/{str(mode)}.txt")
 
 if __name__ == "__main__":
-  print("The default path is:")
-  print(DEFAULT_PATH)
-  path = input("Corrected Path Without Trailing Slash\n> ")
-  DEFAULT_PATH = path
   modes = input("What modes do you want to download?\nSeparate with comma\n> ").split(":", 1)
   for mode in modes:
-    dmode(mode, path)
+    dmode(mode)
