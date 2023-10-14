@@ -1,7 +1,7 @@
 import os
 import requests
 from time import sleep
-DEFAULT_ARGS = "-f 'best[height<=480][ext=mp4]/bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]/best[height<=480]' --write-sub --write-auto-sub --sub-lang all"
+DEFAULT_ARGS = "-f 'best[height<=480][ext=mp4]/bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]/best[height<=480]' --write-sub --write-auto-sub --sub-lang 'e[snu].*'"
 DEFAULT_PATH = input("Corrected Path Without Trailing Slash\n> ")
 def dfile(file: str, args: str = DEFAULT_ARGS, out: str = DEFAULT_PATH):
   with open(file, "r") as f:
